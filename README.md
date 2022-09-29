@@ -56,7 +56,7 @@ function update()
     enemy:setLinearVel(evx, evy)
 
     camera:setX(player:getX() - 400)
-    --camera:setY(player:getY() - 300)
+    camera:setY(player:getY() - 300)
 
     if camera:getX() < 0 then camera:setX(0) end
     if camera:getY() < 0 then camera:setY(0) end
