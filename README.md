@@ -39,7 +39,10 @@ function update()
 
     local evx, evy = 0, 0
     local enemyVel = 0.0
-
+    
+    if engine.isKeyDown("w") then
+        vy = -playerVel
+    end
     if enemy:getX() < player:getX() then
         evx = enemyVel
     end
